@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compositions — Digital Pitch, Human Time</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <style>
+    :root {
+      --bg: #f4efe4;
+      --text: #111111;
+      --muted: #555555;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 3rem 5rem;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.4rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .nav-links a:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .list {
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .piece {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .meta {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 2rem 1.5rem 4rem; }
+      .piece { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="nav">
+      <div class="logo">DIGITAL PITCH, HUMAN TIME</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="compositions.html">Compositions</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Compositions</h1>
+
+      <section class="list">
+        <div class="piece">
+          <div class="meta">No. 1<br/>Jan 27 2026</div>
+          <div>
+            <div class="title">Quadratic Modular Study</div>
+            <p class="meta">
+              Pitch given by \( 2n^2 + 7n + 3 \pmod{12} \)
+            </p>
+            <audio controls>
+              <source src="audio/music-1-1.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
