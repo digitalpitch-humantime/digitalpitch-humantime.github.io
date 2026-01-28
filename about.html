@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Pitch, Human Time</title>
+  <title>About — Digital Pitch, Human Time</title>
   <style>
     :root {
       --bg: #f4efe4;
       --text: #111111;
+      --muted: #555555;
     }
 
     * {
@@ -29,12 +30,11 @@
       padding: 3rem 3rem 5rem;
     }
 
-    /* NAV */
     .nav {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 6rem;
+      margin-bottom: 5rem;
     }
 
     .logo {
@@ -60,29 +60,24 @@
       text-decoration: underline;
     }
 
-    /* CONTENT */
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 2.5rem;
+    }
+
     .content {
       max-width: 900px;
-      font-size: 1.4rem;
+      font-size: 1.35rem;
     }
 
     .content p {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       font-style: italic;
-    }
-
-    .content strong {
-      font-weight: 700;
     }
 
     @media (max-width: 768px) {
       .page {
         padding: 2rem 1.5rem 4rem;
-      }
-
-      .nav {
-        flex-direction: column;
-        gap: 1.5rem;
       }
 
       .content {
@@ -103,12 +98,34 @@
     </nav>
 
     <main class="content">
+      <h1>About</h1>
+
       <p>
-        <strong>Digital Pitch, Human Time</strong> is an experimental project where mathematical algorithms generate a series of musical pitches. The rhythm and harmony is completely human-determined, resulting in a composition involving both mathematical principles and human participation.
+        <strong>Digital Pitch, Human Time</strong> is an exploration of authorship
+        in music. Rather than composing notes directly, the project defines
+        mathematical systems that generate pitch material, shifting compositional
+        intent from individual decisions to formal structures.
       </p>
 
       <p>
-        Each week, 2 to 3 approximately minute-long new compositions will be put up on this website. You can listen to them by clicking on the “Compositions” button on the menu bar.
+        The algorithms used operate on integers, probability distributions, and
+        recursive rules. These systems generate sequences without musical
+        awareness; they do not encode rhythm, harmony, or expression. Their
+        output is purely numerical.
+      </p>
+
+      <p>
+        Human intervention occurs after pitch generation. Rhythm, phrasing,
+        articulation, harmonic context, and large-scale form are shaped through
+        listening and intuition. Time is treated as a human domain, distinct from
+        the algorithmic logic that governs pitch.
+      </p>
+
+      <p>
+        By separating pitch from time, the project examines how much musical
+        meaning can arise from structure alone, and how much depends on human
+        interpretation. The resulting works exist between determinism and choice,
+        calculation and perception.
       </p>
     </main>
   </div>
